@@ -202,7 +202,7 @@ const Dashboard = () => {
                   onClick={handleScheduleAppointment}
                   className="flex-1 bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition flex items-center justify-center"
                 >
-                  <Check className="h-5 w-5 mr-2" /> Schedule Appointment
+                  <Check className="h-5 w-5 mr-2" /> Schedule
                 </button>
                 <button
                   onClick={() => setIsScheduleModalOpen(false)}
