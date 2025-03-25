@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { LogOut, Calendar, Users, MessageCircle, Clock, Bell, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface Appointment {
   id: string;
@@ -140,13 +141,13 @@ const Dashboard = () => {
             <div className="bg-white rounded-lg shadow-sm p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h2>
               <div className="space-y-4">
-                <button className="w-full flex items-center justify-between px-4 py-3 bg-purple-50 rounded-lg hover:bg-purple-100">
-                  <span className="flex items-center">
-                    <Calendar className="h-5 w-5 text-purple-600 mr-3" />
-                    <span>Schedule New Session</span>
-                  </span>
-                  <ChevronRight className="h-5 w-5 text-purple-600" />
-                </button>
+                  <button className="w-full flex items-center justify-between px-4 py-3 bg-purple-50 rounded-lg hover:bg-purple-100">
+                    <span className="flex items-center">
+                      <Calendar className="h-5 w-5 text-purple-600 mr-3" />
+                      <span>Schedule New Session</span>
+                    </span>
+                    <ChevronRight className="h-5 w-5 text-purple-600" />
+                  </button>
                 <button className="w-full flex items-center justify-between px-4 py-3 bg-purple-50 rounded-lg hover:bg-purple-100">
                   <span className="flex items-center">
                     <Users className="h-5 w-5 text-purple-600 mr-3" />
