@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { LogOut, Calendar, Users, MessageCircle, Clock, Bell, ChevronRight } from 'lucide-react';
+import { LogOut, Calendar, Users, MessageCircle, Clock, Bell, ChevronRight, X, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface Appointment {
